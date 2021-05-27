@@ -2,7 +2,7 @@ module.exports = {
     posts: [
         {
             id: 'abcd',
-            title: 'Teste 1',
+            title: 'Teste',
             description: 'Descrição teste'
         },
 
@@ -13,7 +13,7 @@ module.exports = {
     },
 
     newPost(title, description) {
-        this.post.push({ id: generateId(), title, description })
+        this.posts.push({ id: generateId(), title, description })
     },
 
     deletePost(id) {

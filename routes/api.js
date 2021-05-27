@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router()
-const bodyParser = require('body-parser');
+//const bodyParser = require('body-parser');
 const posts = require('../model/posts')
 
 router.get("/all", (req, res) => {
@@ -10,7 +10,8 @@ router.get("/all", (req, res) => {
 
 
 
-router.post("/new", bodyParser.json(), (req, res) => {
+
+router.post("/new", express.json(), (req, res) => {
     let title = req.body.title;
     let description = req.body.description;
 
