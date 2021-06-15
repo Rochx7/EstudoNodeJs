@@ -39,7 +39,7 @@ function newPost() {
 
     const options = {
         method: "POST",
-        headers: new Headers({ 'content-type': 'aplication/json' }),
+        headers: new Headers({ 'content-type': 'application/json' }),
         body: JSON.stringify(post),
     }
 
